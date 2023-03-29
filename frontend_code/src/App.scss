@@ -1,0 +1,55 @@
+.App {
+  .search-box {
+    margin: 32px 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .mic-logo {
+      cursor: pointer;
+      width: 24px;
+      filter: invert(42%) sepia(1%) saturate(3216%) hue-rotate(5deg) brightness(92%) contrast(81%);
+      &.active {
+        filter: invert(42%) sepia(48%) saturate(6886%) hue-rotate(343deg) brightness(101%) contrast(90%);
+      }
+    }
+    .search {
+      margin: 24px;
+      width: 450px;
+      height: 24px;
+      padding: 6px;
+    }
+    button {
+      height: 40px;
+      width: 100px;
+      padding: 6px;
+      margin: 0 12px;
+    }
+
+    .upload-box{
+      padding: 12px;
+      border: 1px dashed #c3c3c3;
+      margin-left: 162px;
+      display: flex;
+      align-items: center;
+
+      .custom-labels {
+        margin-right: 12px;
+        height: 24px;
+        padding: 6px;
+      }
+    }
+  }
+  .album {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+
+    img {
+      width: 300px;
+      margin: 24px;
+    }
+  }
+}
